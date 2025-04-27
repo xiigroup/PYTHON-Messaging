@@ -6,7 +6,7 @@ This sample PYTHON code send an sms message and returns the response in json. to
 Replace **DOMAIN** , **API_USERNAME** & **API_KEY** with your API user Information.
 
 ```
-send_whatsapp_message("whatsapp", "SENDER_ID", PHONE_NUMBER, MESSAGE)
+send_whatsapp_message("sms", "SENDER_ID", PHONE_NUMBER, MESSAGE)
 ```
 
 ## Sample json response
