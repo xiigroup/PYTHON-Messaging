@@ -6,7 +6,7 @@ This sample PYTHON code send an sms message and returns the response in json. to
 Replace sms with whatsapp. Replace **DOMAIN** , **API_USERNAME** & **API_KEY** with your API user Information.
 
 ```
-data = {
+payload = {
   "endpoint": "sms",
   "action": "send",
   "type": "text",
@@ -16,7 +16,7 @@ data = {
   "body": "Dear client..",
 }
 
-send_whatsapp_message("sms", "SENDER_ID", PHONE_NUMBER, MESSAGE)
+send_message(payload)
 ```
 
 ## Sample json response
