@@ -4,7 +4,7 @@ import requests
 from requests.auth import HTTPBasicAuth
 logger = logging.getLogger(__name__)
 
-def send_whatsapp_message(data):
+def send_message(data):
   try:
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
     auth = HTTPBasicAuth("3", "857358244")
