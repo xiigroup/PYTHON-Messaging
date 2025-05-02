@@ -4,10 +4,10 @@ import requests
 from requests.auth import HTTPBasicAuth
 logger = logging.getLogger(__name__)
 
-def send_message(data):
+def send_message(username, password, data):
   try:
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
-    auth = HTTPBasicAuth("3", "857358244")
+    auth = HTTPBasicAuth(username, password)
     response = requests.post("https://api.xiigroup.co.za/", data=data, headers=headers, auth=auth)
     response.raise_for_status()  # Raise HTTPError for bad responses (4xx or 5xx)
     logger.exception(f"E: {response}")
