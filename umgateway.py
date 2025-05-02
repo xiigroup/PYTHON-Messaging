@@ -4,16 +4,8 @@ import requests
 from requests.auth import HTTPBasicAuth
 logger = logging.getLogger(__name__)
 
-def send_whatsapp_message(endpoint, number_id, username, message):
+def send_whatsapp_message(data):
   try:
-    data = {
-        "endpoint": endpoint,
-        "action": "send",
-        "type": "text",
-        "nid": number_id,
-        "to": username[1:],
-        "body": message,
-    }
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
     auth = HTTPBasicAuth("3", "857358244")
     response = requests.post("https://api.xiigroup.co.za/", data=data, headers=headers, auth=auth)
