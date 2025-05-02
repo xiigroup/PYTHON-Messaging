@@ -3,9 +3,19 @@ Send and Receive Whatsapp and SMS messages from any PYTHON enabled system.
 
 ## Sample PYTHON Usage
 This sample PYTHON code send an sms message and returns the response in json. to send a whatsapp message replace sms with **whatsapp**.
-Replace **DOMAIN** , **API_USERNAME** & **API_KEY** with your API user Information.
+Replace sms with whatsapp. Replace **DOMAIN** , **API_USERNAME** & **API_KEY** with your API user Information.
 
 ```
+data = {
+  "endpoint": "sms",
+  "action": "send",
+  "type": "text",
+  "nid": "24",
+  "to": "2701234567",
+  "name": "Sipho Selabe",
+  "body": "Dear client..",
+}
+
 send_whatsapp_message("sms", "SENDER_ID", PHONE_NUMBER, MESSAGE)
 ```
 
