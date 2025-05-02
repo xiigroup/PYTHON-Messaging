@@ -6,6 +6,8 @@ This sample PYTHON code send an sms message and returns the response in json. to
 Replace sms with whatsapp. Replace **DOMAIN** , **API_USERNAME** & **API_KEY** with your API user Information.
 
 ```
+umgateway import send_message #Import send message function from umgateway.py
+
 payload = {
   "endpoint": "sms",
   "action": "send",
@@ -16,7 +18,7 @@ payload = {
   "body": "Dear client..",
 }
 
-send_message(payload)
+send_message("DOMAIN", "API_USERNAME", "API_KEY", payload)
 ```
 
 ## Sample json response
