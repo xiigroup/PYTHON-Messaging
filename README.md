@@ -1,5 +1,5 @@
 # Unified Messaging
-Send and Receive Whatsapp and SMS messages from any PYTHON enabled system.
+Send and Receive Whatsapp and SMS messages from any PYTHON server.
 
 ## Sample PYTHON Usage
 This sample PYTHON code send an sms message and returns the response in json. to send a whatsapp message replace sms with **whatsapp**.
