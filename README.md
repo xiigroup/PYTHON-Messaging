@@ -39,4 +39,4 @@ The following response you receive after send a message using the above sample, 
 }
 ```
 
-For all api payloads definitions [Check wiki](https://github.com/xiigroup/PYTHON-Messaging/wiki), to request your credentials [Contact sales](https://xiigroup.co.za/#contact)
+For all api payloads definitions [Check wiki](https://github.com/xiigroup/Unified-Messaging-Py/wiki), to request your credentials [Contact sales](https://xiigroup.co.za/#contact)
