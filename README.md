@@ -23,7 +23,7 @@ send_message("DOMAIN", "API_USERNAME", "API_KEY", payload)
 ```
 
 ## Sample json response
-The following response you receive after send a message using the above sample, please save the **id** and **transaction_id** for later quering important is the message cannot be sent instant.
+The following response you receive after send a message using the above sample, please save the **id** and **tid** for later quering important is the message cannot be sent instant.
 
 ```json
 {
